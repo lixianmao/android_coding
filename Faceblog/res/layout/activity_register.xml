@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#000080" />
+
+    <EditText
+        android:id="@+id/set_nation"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+       	android:inputType="number"
+        android:background="@drawable/shape3"
+        android:hint="@string/set_nation"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/set_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:hint="@string/set_account"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#dcdcdc" />
+
+        <EditText
+            android:id="@+id/set_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:hint="@string/set_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#dcdcdc" />
+
+        <EditText
+            android:id="@+id/twice_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:hint="@string/twice_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape2"
+        android:text="@string/register" />
+
+</LinearLayout>

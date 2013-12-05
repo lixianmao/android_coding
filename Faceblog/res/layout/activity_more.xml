@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/manage_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape7"
+        android:text="@string/manage_account"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/search_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/manage_account"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape6"
+        android:text="@string/search_friend"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/friend_account"
+        android:layout_below="@id/search_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape5"
+        android:textColor="#ffffff"
+        android:hint="@string/input_friend"
+        android:textSize="20sp"
+        android:inputType="number"/>   
+
+</RelativeLayout>

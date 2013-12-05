@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:id="@+id/iv_show_background"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/ibtn_show_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/head"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="120dp"
+            android:singleLine="true"
+            android:text="@string/initial_nickname"
+            android:textColor="#fffff0"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="120dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/boy" />
+
+        <Button
+            android:id="@+id/btn_write_microblog"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/ibtn_show_head"
+            android:layout_marginLeft="120dp"
+         	android:background="@drawable/shape4"
+            android:text="@string/write_mocroblog"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_friends_list"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/ibtn_show_head"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/shape4"
+            android:text="@string/friends_list"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/tv_show_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/ibtn_show_head"
+            android:layout_below="@id/ibtn_show_head"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introduction2"
+                android:textColor="#dcdcdc"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/initial_introduction"
+                android:textColor="#dcdcdc"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/tv_show_introduction">
+            <Button
+                android:id="@+id/btn_more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/more_information"
+                android:textSize="12sp"/>
+            <ImageView 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#dcdcdc"
+                android:contentDescription="@string/app_name"/>
+            <Button
+                android:id="@+id/btn_microblog_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/microblog"
+                android:textSize="12sp"/>
+            <ImageView 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#dcdcdc"
+                android:contentDescription="@string/app_name"/>
+            <Button
+                android:id="@+id/btn_focus_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/focus"
+                android:textSize="12sp"/>
+            <ImageView 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#dcdcdc"
+                android:contentDescription="@string/app_name"/>
+            <Button
+                android:id="@+id/btn_fans_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/fans"
+                android:textSize="12sp"/>
+            <ImageView 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#dcdcdc"
+                android:contentDescription="@string/app_name"/>
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/more"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dcdcdc"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tv_microblog_num"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/microblog"
+            android:textSize="15sp" />
+
+		<ListView
+		    android:id="@+id/lv_microblog"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_below="@id/tv_microblog_num"
+		    android:background="#ffffff" >
+		</ListView>
+
+    </RelativeLayout>
+    
+</LinearLayout>
